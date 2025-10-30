@@ -299,9 +299,10 @@ if __name__ == "__main__":
     
     model_path = os.path.join(DATA_PATH, "unet_segmentation.pth")
     torch.save(model.state_dict(), model_path)
-    print(f"✅ Model saved: {model_path}\n")
+    print(f" Model saved: {model_path}\n")
     
     plot_results(train_losses, val_losses, dice_scores, iou_scores)
     visualize_predictions(model, val_loader, 4)
     
-    print("✅ Complete!")
+    print(" Complete!")
+
